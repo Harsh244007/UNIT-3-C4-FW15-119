@@ -14,15 +14,15 @@
     </div></div>
   </body>
 </html>
-<link rel="stylesheet" href="/Template-U3C4/styles/main.css">
+<link rel="stylesheet" href="/styles/main.css">
 <script type="module">
 
   
-import sidebar from "/Template-U3C4/components/sidebar.js"
+import sidebar from "/components/sidebar.js"
 var sidebar1= document.getElementById("sidebar")
 sidebar1.innerHTML=sidebar()
 
-import{ apiCall, appendArticles} from "/Template-U3C4/scripts/main.js";
+import{ apiCall, appendArticles} from "/scripts/main.js";
 var search_term=localStorage.getItem("search_term")
 let article = await apiCall(`https://shrouded-earth-23381.herokuapp.com/api/search/?q=${search_term}`)
 

@@ -1,5 +1,5 @@
 function sidebar() {
-return `<div id="home"><a href="/Template-U3C4/index.html" id="home1">Home</a></div>
+return `<div id="home"><a href="/index.html" id="home1">Home</a></div>
 <br>
 <input type="text" id="searchbar" Placeholder="Search...">      
 </div>

@@ -23,14 +23,14 @@
   </body>
 </html>
 
-<link rel="stylesheet" href="/Template-U3C4/styles/main.css">
+<link rel="stylesheet" href="/styles/main.css">
 <script type="module">
   
-import sidebar from "/Template-U3C4/components/sidebar.js"
+import sidebar from "/components/sidebar.js"
 var sidebar1= document.getElementById("sidebar")
 sidebar1.innerHTML=sidebar()
 
-import storeSearchterm from "/Template-U3C4/scripts/search.js"
+import storeSearchterm from "/scripts/search.js"
 var searchbar = document.getElementById("searchbar")
     searchbar.addEventListener("keypress",(e)=>{
     if(e.key=="Enter"){
@@ -39,7 +39,7 @@ storeSearchterm()
 var main= document.getElementById("main")
 var article=JSON.parse(localStorage.getItem("news"))
 
-import appendArticles from "/Template-U3C4/scripts/news.js"
+import appendArticles from "/scripts/news.js"
 appendArticles(article,main)
 
 </script>

@@ -29,7 +29,7 @@ description.innerText=element.description;
 let date=document.createElement("p")
 date.innerText=element.publishedAt;
 div.onclick=()=>{
-    localStorage.setItem("news",JSON.stringify(element))
+    localStorage.setItem("article",JSON.stringify(element))
     window.location.href="/Template-U3C4/news.html"
 }
 div.append(image,title,description,date)

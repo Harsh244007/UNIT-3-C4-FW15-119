@@ -37,7 +37,7 @@ var searchbar = document.getElementById("searchbar")
 storeSearchterm()
     }})
 var main= document.getElementById("main")
-var article=JSON.parse(localStorage.getItem("news"))
+var article=JSON.parse(localStorage.getItem("article"))
 
 import appendArticles from "/scripts/news.js"
 appendArticles(article,main)
